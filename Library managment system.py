@@ -18,7 +18,7 @@ class Library:
     def borrowBook(self, name, bookname):
         if bookname not in self.books:
             print(
-                f"{bookname} BOOK IS NOT AVAILABLE EITHER TAKEN BY SOMEONE ELSE, WAIT UNTIL HE RETURNED.\n")
+                f"{bookname} BOOK IS NOT AVAILABLE EITHER TAKEN BY SOMEONE ELSE, WAIT UNTIL HE HAS RETURNED.\n")
         else:
             track.append({name: bookname})
             print("BOOK ISSUED : THANK YOU KEEP IT WITH CARE AND RETURN ON TIME.\n")
@@ -48,7 +48,7 @@ class Student():
         return self.book
 
     def donateBook(self):
-        print("Okay! you want to doante book!")
+        print("Okay! you want to donate book!")
         self.book = input("Enter name of the book you want to donate: ")
         return self.book
 
